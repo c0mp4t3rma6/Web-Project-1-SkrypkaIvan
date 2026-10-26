@@ -1,0 +1,12 @@
+.header-nav-list{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-list-item-link-img{
+  width: 50px;
+}
+.hero-section-img-content {
+  width: 100%;
+}
