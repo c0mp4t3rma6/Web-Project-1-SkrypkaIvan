@@ -30,6 +30,7 @@
         </ul>
       </nav>
       <h1 class="header-heading">Me, Myself, and I</h1>
+      <hr />
     </header>
     <main class="main">
       <section class="hero-section" id="home-section">
@@ -104,9 +105,77 @@
           </dd>
         </dl>
       </section>
+      <section>
+        <h2>My interests</h2>
+        <dl>
+          <dt>IT</dt>
+          <dd>
+            It is a huge part of my life that I spen hours every day souing
+            something like that to build my skills.
+          </dd>
+          <dt>Hardware</dt>
+          <dd>
+            Same as IT I like to explore, build, and discover new thing in that
+            area I cant imagine without that stuff.
+          </dd>
+          <dt>Swimming</dt>
+          <dd>
+            As my main sport but also a hobby, I like to spend time swimming and
+            perfecting my strokes with every extra meter swam to a complet art
+            like movement.
+          </dd>
+          <dt>
+            <a href="./interests.html">Find out more on my second page!!!</a>
+          </dt>
+        </dl>
+      </section>
+      <section>
+        <h2>Check out more about me on the second page!!!</h2>
+        <a href="./interests.html">Press here</a>
+      </section>
     </main>
     <footer>
-      <h1></h1>
+      <hr />
+      <ul class="header-nav-list">
+        <li class="nav-list-item">
+          <a href="#home-section" class="nav-list-item-link">Me</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#edu" class="nav-list-item-link">Education</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#contacts" class="nav-list-item-link">Contacts</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./interests.html" class="nav-list-item-link">Interests</a>
+        </li>
+      </ul>
+      <form method="get">
+        <fieldset>
+          <legend>Information if you want to reach out</legend>
+          <label for="name">Your full name &#91;Alex Doe&#93;*</label>
+          <br />
+          <input type="text" id="name" name="full-name" required/>
+          <br />
+          <fieldset>
+            <legend>Why do you reach out</legend>
+            <input type="radio" name="why-options" id="why-reachout" />
+            <label for="why-reachout">I am a fit for your company</label>
+            <br />
+            <input type="radio" name="why-options" id="why-reachout" />
+            <label for="why-reachout">You have questions</label>
+            <br />
+            <input type="radio" name="why-options" id="why-reachout" />
+            <label for="why-reachout">Want to check up on some questions</label>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+          <br /><br /><br />
+          <button type="reset">Redo your options</button>
+        </fieldset>
+      </form>
+      <p>&#169;Ivan Skrypka</p>
+      <p>All rights reserved</p>
     </footer>
   </body>
 </html>
