@@ -1,8 +1,3 @@
-<!-- 
- name: Ivan Skrypka
- title: Portfolio 
- updated my sitting spot-->
-<!-- going to be finished soon -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,7 +31,11 @@
     <main class="main">
       <section class="hero-section" id="home-section">
         <h2 class="hero-section-sub-header">Ivan Skrypka</h2>
-        <img src="" class="hero-section-img-content" alt="" />
+        <img
+          src="./img/images.jpg"
+          class="hero-section-img-content"
+          alt="A picture of a drawn, brown, a bit tilted to the right notebook"
+          style="width: 150px" />
         <p class="hero-section-textcontent">
           After 3 countries and 14 years of experience I have a lot to share!
         </p>
@@ -51,39 +50,55 @@
           as hard as Estonian
         </p>
       </section>
-      <section class="edu">
+      <section class="edu" id="edu">
         <h2>My Education</h2>
-        <img src="" alt="" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-d2690hhZps?si=9DkU0Qm0YuHm94uR"
+          title="Study example backdrop animation"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
         <dl>
           <dt>Mykolaiv Municipal Collegium</dt>
           <dd>
-            I have Studied in this school for almost 4 years almost finishing 4
+            I have studied in this school for almost 4 years almost finishing 4
             grades with the same teacher, but for war reasons I had to move to a
             different country. After moving a country I have still studied there
-            online untill the end of my grade 7 year.
+            online until the end of my grade 7 year.
           </dd>
-          <dt>Tallinn Scool No.21</dt>
+          <dt>Tallinn School No.21</dt>
           <dd>
             The richest school I have ever studied in and even though only up
-            util end of grade 4 that was a very nice and unusual experience.
+            until end of grade 4 that was a very nice and unusual experience.
           </dd>
           <dt>Räägu School</dt>
           <dd>
             That was my first and only school for Ukrainian people out of
-            Ukraine. I have studide there again through grade 4 because kids in
-            Estonia go to school a year later and untill the almost the middle
-            of my grade 5 year. It was a fun experience of uniting with people
-            that are suppose to be simmilar to me but still are from different
-            regions of ukraine. I loved it there but they were not the best
+            Ukraine. I have studied there again through grade 4 because kids in
+            Estonia go to school a year later and until almost the middle of my
+            grade 5 year. It was a fun experience of uniting with people that
+            are supposed to be similar to me but still are from different
+            regions of Ukraine. I loved it there but they were not the best
             teachers.
           </dd>
           <dt>Sakala Eragümnaasium</dt>
           <dd>
             Probably the smallest and at the same time the most fancy school I
             have ever been to. Great teachers, experience, and people all are
-            accomodated by a small almost family like community which only has
-            one class per parallel. That was the mostunusual exprience in my
-            life and for almost 8 month of studing it was worth it!
+            accommodated by a small almost family like community which only has
+            one class per parallel. That was the most unusual experience in my
+            life and for almost 8 months of studying it was worth it!
           </dd>
           <dt>École South Pointe School</dt>
           <dd>
@@ -92,17 +107,17 @@
             language, but I still did my best and got all my marks on the
             greatest level.
           </dd>
-          <dt>Pembina Trails Collegiat</dt>
+          <dt>Pembina Trails Collegiate</dt>
           <dd>
-            Scince the start of grade 9 I have been here and even thought it was
-            an unusual start I am full intergrated now and will probably have
-            alot to say after more time spent here!
+            Since the start of grade 9 I have been here and even though it was
+            an unusual start I am fully integrated now and will probably have a
+            lot to say after more time spent here!
           </dd>
           <dt>IT courses</dt>
           <dd>
-            For the last two and a half years I have been studing HTML, CSS, and
-            JS. I am moving alot and building projects with alive people to
-            expend my basic capabilities.
+            For the last two and a half years I have been studying HTML, CSS,
+            and JS. I am moving a lot and building projects with live people to
+            expand my basic capabilities.
           </dd>
         </dl>
       </section>
@@ -111,18 +126,18 @@
         <dl>
           <dt>IT</dt>
           <dd>
-            It is a huge part of my life that I spen hours every day souing
+            It is a huge part of my life that I spend hours every day doing
             something like that to build my skills.
           </dd>
           <dt>Hardware</dt>
           <dd>
-            Same as IT I like to explore, build, and discover new thing in that
-            area I cant imagine without that stuff.
+            Same as IT I like to explore, build, and discover new things in that
+            area I can't imagine without that stuff.
           </dd>
           <dt>Swimming</dt>
           <dd>
             As my main sport but also a hobby, I like to spend time swimming and
-            perfecting my strokes with every extra meter swam to a complet art
+            perfecting my strokes with every extra meter swam to a complete art
             like movement.
           </dd>
           <dt>
@@ -132,10 +147,10 @@
       </section>
       <section>
         <h2>Check out more about me on the second page!!!</h2>
-        <a href="./interests.html">Press here</a>
+        <a href="./interests.html">Press here to check more out!!!</a>
       </section>
     </main>
-    <footer>
+    <footer id="contacts">
       <hr />
       <ul class="header-nav-list">
         <li class="nav-list-item">
@@ -156,7 +171,13 @@
           <legend>Information if you want to reach out</legend>
           <label for="name">Your full name &#91;Alex Doe&#93;*</label>
           <br />
-          <input type="text" id="name" name="full-name" required/>
+          <input type="text" id="name" name="full-name" required />
+          <br />
+          <br />
+          <label for="name">Your email &#91;example@domain.com&#93;*</label>
+          <br />
+          <input type="text" id="name" name="full-name" required />
+          <br />
           <br />
           <fieldset>
             <legend>Why do you reach out</legend>
