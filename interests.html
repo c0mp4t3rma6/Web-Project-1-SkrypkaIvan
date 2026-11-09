@@ -3,21 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interests</title>
+    <title>INTERESTS</title>
   </head>
   <body>
-    <!-- header will be here -->
+    <!-- Header containing navigation, main title, and a divider for the interests page -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html#home-section">Me</a>
+          </li>
+          <li>
+            <a href="./index.html#edu">Education</a>
+          </li>
+          <li>
+            <a href="./interests.html">Interests</a>
+          </li>
+          <li>
+            <a href="./index.html#reach-out">Reach out</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Me, Myself, and I</h1>
+      <hr />
+    </header>
+
+    <!-- Main content container holding the description list of interests -->
     <main>
+      <h2>More About Me</h2>
       <dl>
         <dt>IT</dt>
         <dd>
           <img
             src="./img/it-img.png"
-            alt="a simple code in a usual IDE"
-            style="width: 25%" />
+            alt="a simple code in a visual IDE"
+            style="width: 25%"
+          />
           <br />
           It is a huge part of my life that I spend hours every day doing
-          something like that to build my skills.
+          something like that to build my <b>skills</b>.
         </dd>
         <br />
         <dt>Hardware</dt>
@@ -25,10 +49,11 @@
           <img
             src="./img/computer-hardware.webp"
             alt="a lot of hardware items"
-            style="width: 25%" />
+            style="width: 25%"
+          />
           <br />
           Same as IT, I like to explore, build, and discover new things in that
-          area. I can't imagine life without that stuff.
+          area. I can't <i>imagine</i> life without that stuff.
         </dd>
         <br />
 
@@ -37,16 +62,21 @@
           <img
             src="./img/ai-poster.png"
             alt="An AI poster that has AI capitalized on a purple background and a lot of smaller attributes on the sides including a person."
-            style="width: 25%" />
+            style="width: 25%"
+          />
           <br />
           AI is fun, and finding ways to run it on my own computer and let it do
           tasks to fine-tune the model to my hardware is such a fun experience
-          involving a lot of thinking!
+          involving a lot of thinking! H<sub>2</sub>O models are cool too.
         </dd>
         <br />
         <dt>Open Source</dt>
         <dd>
-          <img src="./img/opensourece-img.png" alt="" style="width: 25%" />
+          <img
+            src="./img/opensourece-img.png"
+            alt="Open source logo"
+            style="width: 25%"
+          />
           <br />
           Instead of paying or using closed-source projects, I very much like
           finding new projects that let me replace something I can't check with
@@ -58,7 +88,8 @@
           <img
             src="./img/swimming.jpg"
             alt="a person in a white swimming cap swimming butterfly."
-            style="width: 25%" />
+            style="width: 25%"
+          />
           <br />
           As my main sport but also a hobby, I like to spend time swimming and
           perfecting my strokes with every extra meter swum to a complete art-
@@ -70,11 +101,12 @@
           <img
             src="./img/gym-picture.jpg"
             alt="A picture of a gym with some red carpet, mostly black all around, and hexagon-shaped lamps"
-            style="width: 25%" />
+            style="width: 25%"
+          />
           <br />
           I might not look like it, but from personal experience, I would say
-          that the gym is very fun, and seeing how you progress is the best feeling
-          ever!
+          that the gym is very fun, and seeing how you
+          <strike>fail</strike> progress is the best feeling ever!
         </dd>
         <br />
         <dt>F1</dt>
@@ -82,7 +114,8 @@
           <img
             src="./img/F1-car.jpg"
             alt="Red Bull Formula One car dark blue color and a lot of advertisements all over it."
-            style="width: 25%" />
+            style="width: 25%"
+          />
           <br />
           I have never been a big fan of watching sports, and even with F1 I
           barely watch it, but I find it so fun to keep up with scores, make
@@ -90,6 +123,79 @@
         </dd>
       </dl>
     </main>
-    <!-- footer will be here -->
+
+    <!-- Footer containing a form, copyright information, and closing remarks -->
+    <footer id="reach-out">
+      <hr />
+      <!-- Form element to wrap all input controls -->
+      <form method="get">
+        <!-- Fieldset element to group related form fields -->
+        <fieldset>
+          <!-- Legend element providing a caption for the fieldset -->
+          <legend>Information if you want to reach out</legend>
+
+          <!-- Label element describing the full name text input -->
+          <label for="full-name">Your full name [Alex Doe]*</label>
+          <br />
+          <!-- Input element for entering plain text -->
+          <input type="text" id="full-name" name="full-name" required />
+          <br />
+          <br />
+
+          <!-- Label element describing the email text input -->
+          <label for="email">Your email [example@domain.com]*</label>
+          <br />
+          <!-- Input element for entering email address -->
+          <input type="email" id="email" name="email" required />
+          <br />
+          <br />
+
+          <!-- Nested fieldset element to group radio button options for the reason of contact -->
+          <fieldset>
+            <legend>Why do you reach out</legend>
+            <!-- Input element for selecting a single option via radio button -->
+            <input
+              type="radio"
+              name="why-options"
+              id="why-reachout-1"
+              value="a fit for company"
+            />
+            <label for="why-reachout-1">I am a fit for your company</label>
+            <br />
+            <input
+              type="radio"
+              name="why-options"
+              id="why-reachout-2"
+              value="questions"
+            />
+            <label for="why-reachout-2">You have questions</label>
+            <br />
+            <input
+              type="radio"
+              name="why-options"
+              id="why-reachout-3"
+              value="check ups"
+            />
+            <label for="why-reachout-3">Want to check up on something</label>
+          </fieldset>
+
+          <!-- Label element describing the range slider -->
+          <label for="text-area">How good do you think the Web-Site is?</label>
+          <br />
+          <!-- Input element with range type for selecting a value on a slider -->
+          <input id="text-area" type="range"  name="range-react"/>
+          <br />
+          <br />
+
+          <!-- Button element to submit form data -->
+          <button type="submit">Submit</button>
+          <br /><br /><br />
+          <!-- Button element to reset form inputs -->
+          <button type="reset">Redo your options</button>
+        </fieldset>
+      </form>
+      <p>©Ivan Skrypka</p>
+      <p>All rights reserved</p>
+    </footer>
   </body>
 </html>
